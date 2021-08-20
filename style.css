@@ -85,16 +85,15 @@ body {
     margin-top: 30px;
 }
 
-.slider-btn .btn {
-    outline: #000;
-    background: #00AFF0;
+.btn{
+    background-color: #00AFF0;
     color: #fff;
-    border-radius: 13px;
-    padding: .7rem 1.5rem;
-    font-size: 1rem;
-    margin-left: 12px;
+    padding: 8px;
+    border-radius: 10px;
 }
-
+.btn:focus{
+    outline: none;
+}
 .slider-btn a {
     text-decoration: none;
     color: #fff;
@@ -189,8 +188,7 @@ h3 {
 }
 
 .blue {
-    color: #00aff0 !important;
-    letter-spacing: 12px !important;
+    color: #00aff0;
 }
 
 .mish {
@@ -347,6 +345,9 @@ h3 {
     color: #526980;
 }
 
+.info{
+    font-size: 25px;
+}
 .footer .credit {
     font-size: 20px;
     color: #526980;
@@ -355,4 +356,26 @@ h3 {
     padding: 2rem 0;
     padding-bottom: 4rem;
     border-top: .1rem solid #ccc !important;
+}
+
+@media(max-width:1200px){
+    .carousel-caption h5{
+        font-size: 28px;
+        width: 100%;
+    }
+    .carousel-caption h5 p{
+        font-size: 18px;
+    }
+    .carousel-item img{
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (max-width:1000px) {
+    .carousel-caption h5{
+        font-size: 25px;
+    }
+    .carousel-caption h5 p{
+        font-size: 15px;
+    }
 }
