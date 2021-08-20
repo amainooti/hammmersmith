@@ -49,7 +49,9 @@ body {
     -webkit-background-size: cover;
     background-size: cover;
 }
-
+img{
+    object-fit: cover;
+}
 .carousel-item::before {
     content: "";
     display: block;
