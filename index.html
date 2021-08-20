@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- aos css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Hammersmith | Hospital</title>
+</head>
+
+<body>
+
+
+    <!-- Nav bar start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="" height="100"> <span class="brand-name"> Hammersmith Hospital</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNav" aria-controls="myNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="myNav">
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-us">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#review">Review</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-us">Contact Us</a>
+                    </li>
+            </div>
+    </nav>
+
+    <!-- Nav bar end -->
+
+    <!-- carousel image  -->
+
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-aos="zoom-in">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/carousel/1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h5>WELCOME TO
+                        <spAN class="blue"> HAMMERSMITH HOSPITAL </spAN>
+                    </h5>
+                    <p>Here we do more than save lives</p>
+                    <div class="slider-btn">
+                        <button class="btn btn-1"> <a href="#">Make appointment </a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/carousel/2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h5>Exceptional practitioners</h5>
+                    <p>Years of experience and dedicated to the course</p>
+                    <div class="slider-btn">
+                        <button class="btn btn-1"> <a href="#"> Make appointment </a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/carousel/3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption ">
+                    <h5>Intensive care </h5>
+                    <p>We value life and so take every precaution to preserve it.</p>
+                    <div class="slider-btn">
+                        <button class="btn btn-1"> <a href="#"> Make appointment</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/carousel/4.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h5>T E A M </h5>
+                    <p>Theres always a plan mostly when it involves human life</p>
+                    <div class="slider-btn">
+                        <button class="btn btn-1"> <a href="#"> Make appointment </a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- End of slider -->
+
+    <!-- Services -->
+    <services id="services" class="services mt-5 mb-3 py-3 gx-5">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="text-center service-head">Our Services</h2>
+                <hr style="margin-bottom: 20px;">
+                <br>
+            </div>
+            <div class="row">
+                <!--  -->
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" id="white">
+                    <div class="service-shadow">
+                        <div class="icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h4>Family medicine</h4>
+                        <p>Our team of dedicated professionals are trained and well equipped to provide you with high quality and the state of the art healthcare you need.</p>
+
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" id="white">
+                    <div class="service-shadow">
+                        <div class="icon">
+                            <i class="fas fa-lungs"></i>
+                        </div>
+                        <h4>Surgery</h4>
+                        <p>Critical surgical procedures are handled by experienced professionals with a sound technical team
+                        </p>
+
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" id="white">
+                    <div class="service-shadow">
+                        <div class="icon">
+                            <i class="fas fa-head-side-virus"></i>
+                        </div>
+                        <h4>Otolaryncology</h4>
+                        <p>Using our renowned medical equipment Our ENT Department treats conditions of the ear, nose, throat, head and neck which includes sore throat, trouble swallowing, ear pain, cough, swollen tonsils</p>
+
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" id="white">
+                    <div class="service-shadow">
+                        <div class="icon">
+                            <i class="fas fa-hand-holding"></i>
+                        </div>
+                        <h4>Lifestyle medicine</h4>
+                        <p>Our professional Life style Medicare can help you dramatically reduce or even eliminate many common chronic diseases including type 2 diabetes, heart disease, auto immune conditions, high cholesterol, obesity, inflammation, and
+                            hypertension.
+                        </p>
+
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" id="white">
+                    <div class="service-shadow">
+                        <div class="icon">
+                            <i class="fas fa-baby"></i>
+                        </div>
+                        <h4>Obsentrics and gynacology</h4>
+                        <p>At Hammersmith Hospital, our gynecologists provide full-service medical care for your sexual and reproductive health care needs. Our obstetricians also offer comprehensive pregnancy care services Regardless of what kind of care
+                            you need, we have compassionate obstetricians and gynecologists ready to provide you with the highest quality personalized care.</p>
+
+                    </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" id="white">
+                    <div class="service-shadow">
+                        <div class="icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h4>Home based care</h4>
+                        <p>Our Homebase care includes Doctor Care, Nurse Care, Health Aides, Conselling and More...</p>
+
+                    </div>
+                </div>
+                <!--  -->
+            </div>
+        </div>
+    </services>
+
+
+
+    <!-- Service section1 ends -->
+    <!-- About Us -->
+    <div class="container" id="services">
+        <div class="row min-vh-100 align-items-center">
+            <div class="col-md-6 content" data-aos="fade-right">
+                <div class="box">
+                    <h3><i class="fas fa-ambulance blue"></i> Ambulance services</h3>
+                    <p>We handle emergency cases with our quick-to-action ambulance services</p>
+                </div>
+
+                <div class="box">
+                    <h3><i class="fas fa-procedures blue"></i> Emergency room</h3>
+                    <p>Our emergency rooms are calm and sterile for the best comfort for speedy recovery</p>
+                </div>
+
+                <div class="box">
+                    <h3><i class="fas fa-stethoscope blue"></i>Check-ups</h3>
+                    <p>Handling check-ups has never been more convenient, we carter for your needs</p>
+                </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-left">
+                <img src="img/apron_nurse_folding_hands-removebg-preview.png" alt="" width="100%" class="my-2">
+            </div>
+        </div>
+    </div>
+
+    <!-- mission  -->
+    <div class="container" id="about-us">
+        <div class="row min-vh-100 align-items-center">
+            <div class="col-md-6" data-aos="fade-right">
+                <img src="img/consultancy-removebg-preview.png" alt="" width="100%" class="my-4">
+            </div>
+            <div class="col-md-6 content" data-aos="fade-left">
+                <div class="box">
+                    <h3 class="mission"><i class="far fa-dot-circle mish"></i> Mission</h3>
+                    <p>We are committed to render the best services to patients through quality health care, quality services and management all towards well-being of patients.
+                    </p>
+                </div>
+
+                <div class="box">
+                    <h3 class="mission"><i class="fas fa-bullseye mish"></i> Vision</h3>
+                    <p>To be the preferred center for health care in the nation.Providing standard health care with dignity courtesy and compassion.</p>
+                </div>
+
+                <div class="box">
+                    <h3 class="mission"><i class="fas fa-people-carry mish"></i>Management</h3>
+                    <p>Are committed to acquiring and applying the most current knowledge and technical skills in the treatment of our patients, and we do this with the utmost respect for the dignity and privacy of each individual.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- About Us ends -->
+
+    <!-- Reviews -->
+    <section class="review" id="review" data-aos="fade-down">
+        <div class="container">
+            <h1 class="heading"> <span id="change">"</span> Review's <span id="change">"</span> </h1>
+            <div class="box-container">
+                <div class="box">
+                    <p>The comfort and serenity that exists in Hammersmith hospital is something everyone needs to experienced
+                    </p>
+                    <h3>Ohore Victor</h3>
+                    <span class="date" id="date">aug 5th, 2021</span>
+                    <img src="img/elizeu-dias-2EGNqazbAMk-unsplash.jpg" alt="">
+                </div>
+                <div class="box">
+                    <p>I'd say if not anything the convenience of Hammersmith coupled with the nice environment is enough to speak for it's self</p>
+                    <h3>Nonso Rose</h3>
+                    <span class="date" id="date">aug 12th, 2021</span>
+                    <img src="img/eye-for-ebony-aZzXKGcyWqk-unsplash.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Review ends here  -->
+    <!-- appointment  -->
+
+    <section class="footer" id="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href=""> <img src="img/logo.png" alt="" height="100"> <span class="brand-name"></span>
+                    </a>
+                    <p>" To be the preferred center for health care in the nation.Providing standard health care with dignity courtesy and compassion. "</p><br>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="emergency">Get help</h3>
+                    <a href="#services"> <i class="fas fa-arrow-right"></i> Family medicine </a>
+                    <a href="#services"> <i class="fas fa-arrow-right"></i> Home based care</a>
+                    <a href="#services"> <i class="fas fa-arrow-right"></i> Lifestyle medicine</a>
+                    <a href="#services"> <i class="fas fa-arrow-right"></i> Otolaryncology</a>
+                    <a href="#services"> <i class="fas fa-arrow-right"></i> obstetrics</a>
+                    <a href="#services"> <i class="fas fa-arrow-right"></i> Surgery</a>
+                    <a href="#services" class="others"> Other</a>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="media" id="media">Find us </h3>
+                    <a href="#" class="black"><i class="fas fa-phone"></i> 0913 847 5749</a>
+                    <a href="#" class="black"> <i class="fab fa-facebook-square"></i> hammmersmith Hospital</a>
+                    <a href="https://www.instagram.com/hammersmithhospital/ " class="black"> <i class="fab fa-instagram"></i> hammersmithhospital</a>
+                    <a href="#" clas="black"><i class="fab fa-google-plus-g"></i> hammersmithhospital@gmail.com</a>
+                    <a href="https://www.google.com/maps/place/21+Mahatma+Gandhi+St,+Garki+900103,+Abuja/@9.0493048,7.5050974,17z/data=!3m1!4b1!4m5!3m4!1s0x104e0bc1759f5459:0xe09e5c183d60b705!8m2!3d9.0493048!4d7.5072861" clas="black"><i class="fas fa-map-marker-alt"></i> 21, Maahatma Ghandi street,
+                        Garki,Abuja.</a>
+                </div>
+            </div>
+        </div>
+        <h1 class="credit text-center mx-auto">Hammersmith Hospital || All rights reserved &copy; 2021.</h1>
+    </section>
+    <!-- appointment ends -->
+    <!-- footer section -->
+    <!-- Contact us -->
+    <!-- Contact us ends -->
+
+
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- popper js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!-- aos js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- custom js -->
+    <script src="index.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            delay: 400
+        })
+    </script>
+</body>
+
+</html>

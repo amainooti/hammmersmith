@@ -1,0 +1,358 @@
+/* * {
+    text-decoration: none !important;
+    list-style: none !important;
+    box-sizing: border-box !important;
+} */
+
+body {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+
+/*  navbar  */
+
+
+/* .navbar {
+    height: 13vh;
+} */
+
+.bg-light {
+    padding: .7px 0;
+}
+
+.brand-name {
+    letter-spacing: 5px;
+    color: #00aff0;
+    font-size: 1.4rem;
+}
+
+.nav-link {
+    justify-content: space-around !important;
+    margin: 4px !important;
+    font-weight: 500 !important;
+}
+
+.nav-link:hover {
+    color: #00aff0 !important;
+}
+
+
+/* navBar ends  */
+
+
+/* beginning of slider */
+
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat scroll center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.carousel-item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.5;
+}
+
+.carousel-caption {
+    bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.carousel-caption h5 {
+    padding-left: 1.9rem;
+    font-size: 37px;
+    font-weight: bold;
+    letter-spacing: 1.8;
+}
+
+.carousel-caption p {
+    top: 2rem;
+    font-size: 18px;
+    letter-spacing: 1.8;
+}
+
+.slider-btn {
+    margin-top: 30px;
+}
+
+.slider-btn .btn {
+    outline: #000;
+    background: #00AFF0;
+    color: #fff;
+    border-radius: 13px;
+    padding: .7rem 1.5rem;
+    font-size: 1rem;
+    margin-left: 12px;
+}
+
+.slider-btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.slider-btn .btn a:hover {
+    color: #606061;
+}
+
+
+/* end of slider */
+
+
+/* Services */
+
+hr {
+    margin-bottom: 20px;
+    width: 8%;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.service-shadow {
+    background: rgb(0, 175, 240, 0.8);
+    text-align: center;
+    padding: 70px 20px 80px 20px;
+    margin-bottom: 22px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.service-shadow:hover {
+    transform: scale(1.1);
+}
+
+.section-title {
+    margin-top: 50px;
+}
+
+.service-head {
+    color: #7F7C82;
+}
+
+.services .icon {
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: #fff;
+    border-radius: 50px;
+}
+
+.service .icon i {
+    font-size: 32px;
+    line-height: 1;
+    position: relative;
+}
+
+.icon {
+    color: #7F7C82;
+}
+
+.service h4 {
+    margin: 10px 0 15px 0;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.service p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+
+/* about us */
+
+.box {
+    color: #7F7C82;
+}
+
+#white {
+    color: #fff;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.blue {
+    color: #00aff0 !important;
+    letter-spacing: 12px !important;
+}
+
+.mish {
+    color: #6883A0;
+    letter-spacing: 12px !important;
+}
+
+.mission {
+    color: #000;
+    cursor: pointer;
+}
+
+.mission:hover {
+    color: #00aff0;
+}
+
+
+/* about us ends */
+
+
+/* review */
+
+.review {
+    background: url(img/review-bg.jpg), linear-gradient(#6883A0, #000) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
+.review .heading {
+    color: #fff;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.review .box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 5rem;
+}
+
+.review .box-container .box {
+    background: #fff;
+    width: 30rem;
+    margin: 5rem 1rem;
+    padding: 1.5rem;
+    position: relative;
+}
+
+.review .box-container .box img {
+    position: absolute;
+    bottom: -7rem;
+    left: -1rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review .box-container .box p {
+    font-size: 1.4rem;
+    color: #000;
+}
+
+.review .box-container .box h3 {
+    text-align: end;
+    color: #00aff0;
+}
+
+.review .box-container .box span {
+    text-align: end;
+    color: #000;
+    display: block;
+    font-size: 1.5rem;
+}
+
+.review .box-container .box::before {
+    content: "";
+    position: absolute;
+    bottom: -1rem;
+    left: .4rem;
+    height: 2rem;
+    width: 2rem;
+    background: #fff;
+    transform: rotate(45deg);
+}
+
+#date {
+    font-size: 14px !important;
+    color: #606061;
+}
+
+#change {
+    color: #00AFF0;
+}
+
+
+/* contact us */
+
+.footer {
+    background: #fff;
+    padding-top: 10rem;
+}
+
+.footer p {
+    font: 1.5rem;
+    color: #06153e;
+    padding: 1rem 0;
+}
+
+.footer .col-md-4:nth-child(1) a {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.footer a {
+    font-size: 1.2rem;
+    color: #000;
+    display: block;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #7F7C82;
+}
+
+.emergency {
+    background: #F6453F;
+    color: #fff;
+    width: 180px;
+    padding: .5rem 1.7rem;
+    text-align: center;
+}
+
+.fa-arrow-right {
+    color: #F6453F;
+}
+
+.media a {
+    color: #000;
+    width: 180px;
+    padding: .6rem 0.1rem;
+    text-align: center;
+}
+
+#media {
+    background: #F6453F;
+    padding: .5rem 1.7rem;
+    color: #fff;
+}
+
+.footer i {
+    color: #526980;
+}
+
+.footer .credit {
+    font-size: 20px;
+    color: #526980;
+    width: 80%;
+    margin: 0;
+    padding: 2rem 0;
+    padding-bottom: 4rem;
+    border-top: .1rem solid #ccc !important;
+}
