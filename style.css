@@ -3,14 +3,98 @@
     list-style: none !important;
     box-sizing: border-box !important;
 } */
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: 'Roboto', sans-serif !important;
 }
 
-
+nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #06153e;
+    color: #fff;
+    min-height: 8vh;
+}
+.nav-links{
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-links li{
+    list-style: none;
+    margin-top: 10px;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+.burger{
+    display: none;
+}
 /*  navbar  */
 
+@media(max-width:1000px){
+    .nav-links{
+        width: 60%;
+    }
+}
+@media (max-width:850px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        z-index: 3;
+        position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        background-color: #526980;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+    .nav-active{
+        transform: translateX(0%);
+    }
+    @keyframes navLinkFade {
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    .toogle .line1{
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .toogle .line2{
+        opacity: 0;
+    }
+    .toogle .line3{
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
 
 /* .navbar {
     height: 13vh;
@@ -26,15 +110,6 @@ body {
     font-size: 1.4rem;
 }
 
-.nav-link {
-    justify-content: space-around !important;
-    margin: 4px !important;
-    font-weight: 500 !important;
-}
-
-.nav-link:hover {
-    color: #00aff0 !important;
-}
 
 
 /* navBar ends  */
@@ -42,15 +117,16 @@ body {
 
 /* beginning of slider */
 
-.carousel-item {
+/* .carousel-item {
     height: 100vh;
     min-height: 300px;
     background: no-repeat scroll center scroll;
     -webkit-background-size: cover;
     background-size: cover;
 }
-img{
-    object-fit: cover;
+.carousel-item img{
+    object-fit: contain !important;
+
 }
 .carousel-item::before {
     content: "";
@@ -103,7 +179,7 @@ img{
 
 .slider-btn .btn a:hover {
     color: #606061;
-}
+} */
 
 
 /* end of slider */
